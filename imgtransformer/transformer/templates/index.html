@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block body_block %}
+<h1>Welcome to the simple Image Transformation API</h1>
+<h3>General information</h3>
+<p>Currently it supports 3 operations:</p>
+<ol>
+    <li><p> "/api/rotate/<code>DIRECTION</code>/<code>DEGREE</code>/" - rotates image by custom angle<br>
+        <code>DIRECTION</code> - <strong>cw</strong> for clockwise or <strong>ccw</strong> for counterclockwise<br>
+        <code>DEGREE</code> - positive integer from 0 to 999</p></li>
+    <li>"/api/resize/<code>PERCENTAGE</code>/" - resizes image to some percent of its original size<br>
+        <code>PERCENTAGE</code> - positive integer from 1 to 999</li>
+    <li>"/api/bw/" - to convert colour space of the image from RGB to Black and White</li>
+</ol>
+
+<h3>How to use it</h3>
+<ol>
+    <li>Choose necessary endpoint</li>
+    <li>Specify modification parameters in URL</li>
+    <li>Select image file to be modified and upload it</li>
+    <li>You will receive modified file in response</li>
+</ol>
+    
+<h3>
+    Some usage examples 
+</h3>
+<ul>
+    <li>
+        <a href="/api/rotate/cw/90/">/api/rotate/cw/90/</a> - rotate image by 90° clockwise
+    </li>
+    <li>
+        <a href="/api/rotate/ccw/43/">/api/rotate/ccw/43/</a> - rotate image by 43° counterclockwise
+    </li>
+    <li>
+        <a href="/api/resize/90">/api/resize/90</a> - resize image to 90% of its orifinal size
+    </li>
+    <li>
+        <a href="/api/bw/">/api/bw/</a> - colourspace convertion
+    </li>
+</ul>
+</p>
+{% endblock %}
