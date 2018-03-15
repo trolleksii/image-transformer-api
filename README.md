@@ -8,10 +8,10 @@ Simple app that takes an image from post request and transform it according to t
 
 ## Some use examples:
 
-`/api/rotate/cw/90/` - rotate image by 90° clockwise
-`/api/rotate/ccw/43/` - rotate image by 43° counterclockwise
-`/api/resize/90/` - resize image to 90% of its original size
-`/api/bw/` - convert colourspace from RGB to black and white
+`/api/rotate/cw/90/` - rotate image by 90° clockwise<br>
+`/api/rotate/ccw/43/` - rotate image by 43° counterclockwise<br>
+`/api/resize/90/` - resize image to 90% of its original size<br>
+`/api/bw/` - convert colourspace from RGB to black and white<br>
 
 
 ## Installation instructions
