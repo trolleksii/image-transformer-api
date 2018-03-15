@@ -21,15 +21,15 @@ Simple app that takes an image from post request and transform it according to t
 ```
 mkdir project
 cd ./project
-git clone https://github.com/trolleksii/image_transformer.git
+git clone https://github.com/trolleksii/image-transformer-api.git
 ```
 3. Create a new virtual environment with Python 3 interpreter:<br>
  `virtualenv -p python3 ./venv`
 4. Activate it:<br>
  `source ./venv/bin/activate`
 5. Install required packages from requirements.txt:<br>
- `pip install -r ./image-transformer/requirements.txt`
-6. `cd` into ./image-transformer:<br>
- `cd ./image-transformer/`
+ `pip install -r ./image-transformer-api/requirements.txt`
+6. `cd` into ./image-transformer-api/imgtransformer:<br>
+ `cd ./image-transformer-api/imgtransformer/`
 7. Run tests to make sure that everything is working as it should:<br>
  `python manage.py test`
